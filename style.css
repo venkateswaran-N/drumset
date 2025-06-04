@@ -1,0 +1,289 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-image: url(./backgroundpattern2.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.drum:active{
+   background-color:#CB0404;
+
+}
+.title{
+    position: relative;
+    background-color: #309898;
+    padding: 200px;
+    background-image: url(./backgroundpattern.png);
+
+}
+
+.drum-title{
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    font-family: 'Supermercado One';
+    color: #FF9F00;
+}
+
+.drum-subtitle{
+    text-align: center;
+    font-family: 'Rubik Mono One';
+    font-size: small;
+    color:white;
+}
+
+.drum-set{
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9F00;
+    padding: 100px;
+    margin: 50px;
+}
+
+
+.footer-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #CB0404;
+    margin-top: 80px;
+    
+}
+
+.sheepgif-para{
+   color: antiquewhite;
+   font-family: 'Dancing Script';
+   font-size: 1.5rem;
+}
+
+.footer-div{
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer-text{
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.nav-bar{
+   position: absolute;
+   margin-left: 800px;
+}
+
+.li-first-back{
+   background-color:#FF9F00;
+   color: white;    
+}
+.ul-one{
+    background-color: white;
+    margin: 0;
+    padding: 0px;
+    width: 200px;
+    list-style-type: none;
+    border-radius: 10px;
+  
+}
+
+ul.ul-one li a{
+    display: block;
+    color: black;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#popupdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:grey;
+    right: 10px;
+    top: 27px;
+    color: antiquewhite;
+    padding: 40px;
+    width: 20%;
+    height: 100px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius:50px 50px 50px 50px;
+    display: none;
+  
+}
+
+.popuppara{
+    text-align: center;
+    margin-top: 10px;
+}
+
+strong{
+    color: white;
+}
+
+
+.contact-div-cont{
+  display: none;  
+  position: absolute;
+  width: 100px;
+  padding:20px;
+  right: 90px;
+  top: 200px;
+  background-color: grey;
+  border-radius: 20px 20px 20px 0px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-content a {
+  display: inline-block;
+  color: antiquewhite;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+  color: #FF9F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-para {
+  margin: 0px;
+  font-size: 1rem;
+  color: #333;
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-size: 600px;
+    background-position: center;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+  }
+
+  .title {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .drum-title {
+    margin:0px 0px 30px 0px;
+    font-size: 4rem;
+    font-family: 'Lucida Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 0 #333;
+
+  }
+
+  .drum-subtitle {
+    font-size: 0.7rem;
+    
+    text-shadow: 2px 0 #333;
+  }
+
+  .drum-set {
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+.e{
+    width: 80%;
+}
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nav-bar {
+    position: relative;
+    width: 600px;
+    padding:0;
+    bottom: 100px;
+    margin-top:10px ;
+    margin-left: 0;
+    text-align: center;
+ 
+    
+  }
+
+  .ul-one {
+    width: 65%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+
+
+  }
+
+  ul.ul-one li a {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #popupdiv{
+    width: 80%;
+    left: 30px;
+    top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+    height: auto;
+    border-radius: 20px;
+  }
+  .contact-div-cont {
+    width: 20%;
+    right: 20px;
+    top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .footer-2 {
+    padding: 50px 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sheepgif-para {
+    font-size: 1.2rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-content a {
+    font-size: 0.9rem;
+  }
+}
+
+
+
