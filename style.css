@@ -173,16 +173,16 @@ strong{
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-  body {
+body {
   background-size: 1000px;
   background-position: center;
   overflow-x: hidden;
   background-repeat: no-repeat;
-}
+ }
 
-  }
+
 
   .title {
     padding: 100px 20px;
@@ -286,4 +286,4 @@ strong{
   }
 
 
-
+}
