@@ -7,7 +7,7 @@ body{
     background-image: url(./backgroundpattern2.jpg);
     object-fit: cover;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 img{
     width: 200px;
@@ -175,129 +175,140 @@ strong{
 
 
 
-
-
-
-@media (max-width: 768px){
-
-body {
-  margin: 0;
-  background-image: url(./backgroundpattern2.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;  
-  background-position: top center;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-
-
- html{
-    scroll-behavior: smooth;
-}
-
-img{
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-}
-
-.drum:active{
-   background-color:#CB0404;
-
-}
-.title{
-    position: relative;
-    background-color: #309898;
-    padding: 200px;
-    background-image: url(./backgroundpattern.png);
-
-}
-
-.drum-title{
-    font-size: 3rem;
+@media (max-width: 768px) {
+  body {
     margin: 0;
+    background-image: url(./backgroundpattern2.jpg);     /* altered*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: scroll;
+    overflow-x: hidden;
+  }
+
+  .title {
+    padding: 100px 20px;
+    text-align: center;                /* altered*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50vh; 
+    background-size: cover; 
+    margin: 0;
+  
+  }
+
+  .drum-title {
+
+    margin-top: 60px; /* altered*/
+    font-size: 3rem;
     text-align: center;
     font-family: 'Supermercado One';
     color: #FF9F00;
-}
+  }
 
-.drum-subtitle{
-    text-align: center;
+  .drum-subtitle {   /*altered*/
+    
+    text-align: center; 
     font-family: 'Rubik Mono One';
     font-size: small;
     color:white;
-}
+  
+  
+  }
 
-.drum-set{
-    display: flex;
+  .drum-set {
+    flex-wrap: wrap;          /*altered*/
     gap: 10px;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
     background-color: #FF9F00;
-    padding: 100px;
+    margin: 50px auto 10px auto;
+    padding:40px 10px ;
+
+
+    /*gap: 10px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9F00;
     margin: 50px;
-}
+    
+    
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    margin: 20px auto;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;*/
+  }
 
+  img {
+    width: 120px;
+    height: 120px;
+  }
 
-.footer-2{
+  .nav-bar {
+    position: static;     /* altered */
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+
+  }
+
+  .d,.e{
+    width: 210px;    /* altered */
+  }
+
+  .ul-one {
+    width: 90%;        /*altered*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    background-color: #CB0404;
-    margin-top: 80px;
-    
-}
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0 auto;
+    list-style-type: none;
 
-.sheepgif-para{
-   color: antiquewhite;
-   font-family: 'Dancing Script';
-   font-size: 1.5rem;
-}
 
-.footer-div{
-    color: black;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.footer-text{
-    font-family: monospace;
-    font-weight: bold;
-}
-
-.nav-bar{
-   position: absolute;
-   margin-left: 800px;
-}
-
-.li-first-back{
-   background-color:#FF9F00;
-   color: white;    
-}
-.ul-one{
-    background-color: white;
+       /* background-color: white;
     margin: 0;
     padding: 0px;
     width: 200px;
     list-style-type: none;
-    border-radius: 10px;
-  
-}
+    border-radius: 10px;*/
+  }
 
-ul.ul-one li a{
-    display: block;
-    color: black;
-    padding: 8px 0 8px 16px;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium';
-}
+  ul.ul-one li a {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 
-#popupdiv{
-    display: flex;
+  #popupdiv {         /*altered*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color:grey;
+    right: 10px;
+    top: 310px;
+    color: antiquewhite;
+    padding: 40px;
+    width: 80%;
+    height: 100px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius:50px 50px 50px 50px;
+
+/*   width: 80%;
+    left: 10%;
+    top: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
+    height: auto;
+    border-radius: 20px;
+
+
+
+
+        display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -310,22 +321,39 @@ ul.ul-one li a{
     height: 100px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     border-radius:50px 50px 50px 50px;
-    display: none;
-  
-}
+    display: none*/
+  }
 
-.popuppara{
-    text-align: center;
-    margin-top: 10px;
-}
-
-strong{
-    color: white;
-}
-
-
-.contact-div-cont{
+  .contact-div-cont {         /*altered*/
   display: none;  
+  position: absolute;
+  width: 100px;
+  padding:20px;
+  right: 10px;
+  top: 25px;
+  background-color: grey;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    /*     display: none;
+    width: 60%;
+    right: auto;
+    left: 20%;
+    top: 120px;
+    padding: 20px;
+    font-size: 0.9rem;
+    height: auto;
+    border-radius: 20px;
+
+    
+    
+    
+    
+    
+    display: none;  
   position: absolute;
   width: 100px;
   padding:20px;
@@ -335,27 +363,27 @@ strong{
   border-radius: 20px 20px 20px 0px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   height: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  }
+
+  .footer-2 {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .sheepgif-para {
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-content a {
+    font-size: 0.9rem;
+  }
 }
 
-.contact-content a {
-  display: inline-block;
-  color: antiquewhite;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-.contact-content a:hover {
-  color: #FF9F00;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.contact-para {
-  margin: 0px;
-  font-size: 1rem;
-  color: #333;
-
-} 
-}
